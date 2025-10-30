@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+canvas {
+    display: block; /* Remove any default spacing */
+}
+
+/* Styles for the control panel overlay */
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 8px; /* Space out buttons */
+    z-index: 10; /* Ensure it's on top of the canvas */
+}
+
+#controls button {
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#controls button:hover {
+    background-color: #ffffff;
+}
+
+/* Style for the separators */
+#controls hr {
+    width: 90%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
